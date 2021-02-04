@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=25;
+		nextID=26;
 	};
 	class Camera
 	{
@@ -35,6 +35,7 @@ addons[]=
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Supplies_F_Heli_Fuel",
 	"A3_Weapons_F_Ammoboxes",
+	"ace_dragging",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Soft_F_Offroad_01",
 	"A3_Soft_F_Enoch_Van_02",
@@ -56,6 +57,7 @@ addons[]=
 	"A3_Armor_F_Tank_AFV_Wheeled_01",
 	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Soft_F_Exp_Truck_01",
+	"ace_cargo",
 	"A3_Soft_F_Enoch_Truck_01",
 	"A3_Soft_F_MRAP_01",
 	"A3_Soft_F_Quadbike_01",
@@ -384,7 +386,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="0 = []spawn{" \n "" \n "waitUntil{!isNull findDisplay 46};" \n "" \n "systemChat ""Mission -ed and modified [Vehicle Inventory System]( https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937&searchtext=vehicle+in+vehicle)"";" \n "systemChat ""modified [Vehicle Appearance Manager GUI](https://www.armaholic.com/page.php?id=35222)"";" \n "systemChat ""modified [GOM Fnc AircraftLoadout](https://www.armaholic.com/page.php?id=32755)"";" \n "" \n "};";
+					value="0 = []spawn{" \n "" \n "waitUntil{!isNull findDisplay 46};" \n "" \n "systemChat ""Mission -ed and modified [Vehicle Inventory System]( https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937&searchtext=vehicle+in+vehicle)"";" \n "" \n "};";
 				};
 			};
 		};
@@ -415,7 +417,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="Arma 3 Enhancement";
+		briefingName="Vehicle Inventory System En";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
