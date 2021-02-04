@@ -1,0 +1,118 @@
+// # Mission
+
+respawnOnStart = 1;		// Default: 1 (zeus)
+//skipLobby = 1;		// Default: 0
+
+respawnVehicleDelay = 900;
+
+class CfgRoles {
+
+	class light {
+		displayName = "Light";		// Name of the role, displayed in the respawn menu
+		icon = "a3\missions_f_exp\data\img\classes\default_ca.paa";		// Icon shown next to the role name in the respawn screen
+	};
+	
+};
+
+class CfgRespawnInventory {
+
+	class sideB_b {
+		displayName = "Rifleman, out of formation";		// Name visible in the menu
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";		// Icon displayed next to the name
+		role = "light";		// Optional, see CfgRoles
+
+		// Loadout definition, uses same entries as CfgVehicles classes
+		weapons[] = {
+			"arifle_MX_Black_F",
+			"hgun_P07_F",
+			"NVGoggles_INDEP",
+			"Binocular"
+		};
+		magazines[] = {
+			"SmokeShellGreen",
+			"Chemlight_yellow",
+			"SmokeShell",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag"
+		};
+		items[] = {
+			"FirstAidKit"
+		};
+		linkedItems[] = {
+			"ItemCompass",
+			"V_Rangemaster_belt",
+			"H_Milcap_tna_F",
+			"G_Bandanna_sport",
+			"optic_DMS",
+			"acc_pointer_IR",
+			"ItemMap",
+			"ItemRadio",
+			"ItemGPS"
+		};
+		uniformClass = "U_B_CombatUniform_mcam_wdl_f";
+		backpack = "B_LegStrapBag_olive_F";
+	};
+
+};
+
+#include "\a3\ui_f\hpp\definecommongrids.inc"
+	#include "\a3\ui_f\hpp\definecommoncolors.inc"
+	#include "\a3\ui_f\hpp\definedikcodes.inc"
+
+	#include "\a3\ui_f\hpp\defineresincl.inc"
+	#include "\a3\3DEN\UI\macros.inc"
+	#include "\a3\3DEN\UI\macroexecs.inc"
+
+
+// # assets
+
+#include "storage\GuiEditorParentClasses.cpp"
+#include "storage\RscMapControl.cpp"
+#include "storage\RscTree.cpp"
+
+#define GUI_GRID_X	(0)
+	#define GUI_GRID_Y	(0)
+	#define GUI_GRID_W	(0.025)
+	#define GUI_GRID_H	(0.04)
+	#define GUI_GRID_WAbs	(1)
+	#define GUI_GRID_HAbs	(1)
+
+class CfgFunctions {
+	class missionConfigFile {		// Tag-class . by default : file = "functions\" ; . description.ext doesn't support > 1 .
+		tag = "Mission";		// in description.ext, doesn't work in subs of Tag-classes . Case-Insensitive .
+
+		/* class init_respawnLoadouts {		// #Mission . by default: file = "fn_<<className>>"; . need to be unique in CfgFunction's sub-Tag -s (in Mission, which doesn't support >1 Tag, it can be correlated manually)
+			//requiredAddons[] = {"A3_Data_F"};		// Optional requirements of CfgPatches classes. When some addons are missing, functions won't be compiled.
+			headerType = -1;	// Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			//file = "fn_init_respawnLoadouts.sqf";		//[|sometimes], directly the missionFolder, doesn't work . default = "functions"
+
+			preStart = 0;		// 1 to call the function upon game start, before title screen, but after all addons are loaded (config.cpp only)
+			//if file is in missionFolder, sometimes shows error; recompile = 1;		// 1 to recompile the function upon mission start (config.cpp only; functions in description.ext are compiled upon mission start already)
+			preInit = 1;		// (formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+			postInit = 0;		// 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit", didJIP]
+
+			ext = ".sqf";		// Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+		}; */
+
+		#include "storage\vehicleInventorySystem\cfgFunctions.cpp"		// #vehicleInventorySystem
+
+	};
+};
+
+class rscTitles {		//i cutRsc['shZtXarma3',plain,-1,false];
+
+};
+
+// ## vehicleInventorySystem
+
+#include "storage\vehicleInventorySystem\config.cpp"
+
+
+// # actions
+
+class CfgCommunicationMenu {
+
+};

@@ -1,0 +1,10 @@
+[
+	["magazine","30Rnd_65x39_caseless_mag",[]],
+	["item","H_HelmetHBK_headset_F",[]],
+	["weapon","arifle_AK12_arid_F",["","","",[],[],""]],
+	["weapon","launch_MRAWS_green_rail_F",["","acc_pointer_IR","",[],[],""]],
+	["weapon","hgun_Pistol_heavy_01_F",["muzzle_snds_acp","acc_flashlight_pistol","optic_MRD",["11Rnd_45ACP_Mag",11],[],""]],
+	["uniform","U_B_CombatUniform_mcam",["20Rnd_762x51_Mag","Chemlight_green","11Rnd_45ACP_Mag","11Rnd_45ACP_Mag","FirstAidKit"]],
+	["vest","V_PlateCarrier1_rgr",["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","HandGrenade","HandGrenade","11Rnd_45ACP_Mag"]],
+	["backpack","B_Carryall_cbr",[]]
+]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Mission">
+	<Package name="Mission">
+		<Key ID="STR_Mission_t">
+			<Original>t</Original>
+			<Korean>t</Korean>
+		</Key>
+	</Package>
+</Project>

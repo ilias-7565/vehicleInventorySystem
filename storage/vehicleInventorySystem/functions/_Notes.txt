@@ -1,0 +1,13 @@
+Magazine check: "20Rnd_762x51_Mag" isKindOf ["CA_Magazine", configFile >> "CfgMagazines"];
+
+Rifle Check: primaryweapon player isKindOf ["Rifle", configFile >> "CfgWeapons"];
+
+Pistol Check: handgunWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"];
+
+Launcher check: secondaryWeapon player isKindOf ["Launcher", configFile >> "CfgWeapons"];
+
+Vest Check: vest player isKindOf ["Vest_Camo_Base", configFile >> "CfgWeapons"] OR vest player isKindOf ["Vest_noCamo_Base", configFile >> "CfgWeapons"]
+
+Uniform check: uniform  player isKindOf ["Uniform_Base", configFile >> "CfgWeapons"];
+
+Backpack check: backpack  player isKindOf ["ReammoBox", configFile >> "CfgVehicles"];

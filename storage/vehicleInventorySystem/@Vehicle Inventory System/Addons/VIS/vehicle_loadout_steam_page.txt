@@ -1,0 +1,70 @@
+[b]This addon adds the capability to manage the inventory of vehicles using profiled loadouts, similar to the BI or ACE Arsenal Loadouts[/b]
+
+This system is intended to allow anyone to develop and save a custom vehicle loadout without having to write scripts and record item classnames. Simnply sonfigure a vehicle inventory as you like, save the loadout as a profile and load it into any vehicle near an ACE or BI virtual aresneal.
+
+This is designed to work in SP, MP and Dedicated with human and AI vehicles.
+
+This is a Beta release. 
+
+[b]***For best results, use with the AmmoCan mod, to save vehicle profiles with additional ammo![/b] $link
+[b]***For best results, use with the Helocast mod, to expedite the loading of equipment into CRRCs![/b] $link
+
+[b]Supported Vehicles:[/b][LIST]
+[*]All mobile Vehicles are Supported by Default (Static Turrets are not supported at this time)
+[/LIST]
+
+
+[b]Features:[/b][LIST]
+[*]Support for SP, MP and Dedicated
+[*]Ability to clear existing inventory from a vehicle
+[*]Ability to save and load inventory profiles for later use, or for quickly preparing for the mission at hand
+[*]Tested & compatible with ALiVE and Zeus spawned vehicles
+[*]Should be compatible with Liberation, Antistasi, etc. (Would love testing feedback)
+[/LIST]
+
+[b]Setup:[/b]
+The vehicle must be near a BI or ACE arsenal and not moving - at that point the vehicle will have a scroll action to allow saving and loading.
+[LIST]
+[*]Non-armored vehicles must be within 30 meters
+[*]Armored vehicles must be within 50 meters
+[*]Aircraft must be within 200 meters
+[*]Ships must be within 300 meters
+[/LIST]
+
+Vehicles are automatically ready to have profiles saved and loaded.
+Simply fill a vehicle inventory to the desired specifications, and save the loadout. It can be loaded again into a vehicle for later use.
+Loadouts are not vehicle specific, however it is recommended to make separate loadouts for vehicles with different carrying capacities, as to avoid truncating your inventory.
+
+[b]Vehicle Loadout Procedure:[/b]
+From anywhere you can access the inventory of a compatable vehicle, which has been parked nearby an BI or Ace Arsenal > From your inventory, deposit desired items into the vehicle > While near an BI or Ace arsenal, save the loadout via scroll interaction > Load the profile as needed.
+
+[b]Tips:[/b]
+Like the BI and Ace Arsenals, this mod does not 'add' items to the vehicle inventory, rather it sets the inventory to a given profile. When loading vehicles, be sure to load a profile as needed before adding any additional items.
+The saves are associated with your ARMA 3 profile - if you change profiles, you won't see your saves.
+
+[b]Limitations:[/b][LIST]
+[*]The system does not track which addons you are using. If you make a save for items that aren't available they will be skipped (I think...feedback welcome)
+[*]Overwriting save profiles is not yet implemented
+[*]Vehicle Loadouts are not Vehicle Unique, so inventories that are too large for the vehicle you're trying to load won't work.
+[*]Does not preserve ACE Cargo spaces. Any item in ACE Cargo will still need to be managed by hand.
+[/LIST]
+
+[b]Planned Updates:[/b][LIST]
+[*]ACE Cargo compatability
+[*]Ability to overwrite existing save profiles
+[*]Additional inventory realism features
+[*]Static turret support
+[/LIST]
+
+[b]Usage Restrictions:[/b]
+The GNU General Public License v3.0: https://www.gnu.org/licenses/gpl-3.0.en.html
+
+I know folks are going to dePBO this, so the GPL license just basically asks that you mention me on any work based on this. I will be making my Github for this public once the addon is a bit more mature.
+
+Anyone may add the raw PBOs for this mod into their own addons, etc.
+
+[b]BIS Forum:[/b]
+$Link
+
+[b]Acknowledgments and Thanks:[/b]
+Roqarr
