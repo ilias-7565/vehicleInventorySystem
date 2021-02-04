@@ -1,6 +1,6 @@
 # Vehicle Inventory System En
 
-### Mission init
+### Mission-folder storage init
 
 Require : optionally cfgF ;
 
@@ -26,11 +26,15 @@ class CfgFunctions {
 
 ### Pack into Addon/Mod
 
-Optionally : delete
+Optionally :
+
+rename it ( [..].Altis ) to the Addon file name ;
+
+and delete :
 * mission.sqm ,
 * description.ext ,
 * onPlayerKilled.sqf ,
 * onPlayerRespawn.sqf ,
-* init.sqf ;
+* init.sqf ; ;
 
-And just pack with any Builder .
+Process with any packer .
