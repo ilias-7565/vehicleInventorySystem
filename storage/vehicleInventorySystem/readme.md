@@ -1,12 +1,12 @@
 # Vehicle Inventory System En
 
-## init
+### Mission init
 
-Require : CBA, optionally cfgF ;
+Require : optionally cfgF ;
 
 Mission-folder Compatible with : en, GOM Aircraft Loadout, Vehicle Appearance Manager (GUI) ;
 
-description.ext / config.cpp
+description.ext
 ```
 
 class CfgFunctions {
@@ -22,4 +22,15 @@ class CfgFunctions {
 
 #include "storage\vehicleInventorySystem\config.cpp"
 
-````
+```
+
+### Pack into Addon/Mod
+
+Optionally : delete
+* mission.sqm ,
+* description.ext ,
+* onPlayerKilled.sqf ,
+* onPlayerRespawn.sqf ,
+* init.sqf ;
+
+And just pack with any Builder .

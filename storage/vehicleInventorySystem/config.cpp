@@ -1,23 +1,3 @@
-/* class CfgPatches {
-	class Vehicle_Inventory_System
-	{
-		name="Vehicle Inventory System";
-		author="Fat_Lurch";
-		requiredVersion=1.6;
-		requiredAddons[]=
-		{
-			"A3_Data_F",
-			"A3_Characters_F",
-			"cba_main"
-		};
-		units[]={};
-		weapons[]={};
-	};
-};
-class cfgMods {
-	author="Fat_Lurch";
-	timepacked="1594390834";
-}; */
 
 class loadDialog
 {
